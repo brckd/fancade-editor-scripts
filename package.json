@@ -2,15 +2,19 @@
   "name": "fancade-editor-scripts",
   "version": "1.0.0",
   "description": "A collection of scripts for Fancade Editor Scripting.",
+  "keywords": [
+    "fancade",
+    "scripts",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "author": "Bricked",
   "scripts": {
     "build": "npx tsc",
     "watch": "npx tsc -w"
   },
-  "keywords": ["fancade", "scripts", "polyfill"],
-  "author": "Bricked",
-  "license": "MIT",
   "devDependencies": {
-    "babel-minify": "^0.5.2",
+    "terser": "^5.16.6",
     "typescript": "^5.0.2"
   }
 }
