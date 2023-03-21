@@ -56,3 +56,12 @@ declare interface Array<T> {
 Array.prototype.includes = function (searchElement, fromIndex = 0) {
   return this.indexOf(searchElement, fromIndex) >= 0;
 };
+Array.from = function<T, U>(iterable: Iterable<T> | ArrayLike<T>, mapfn?: (v: T, k: number, arr: T[]) => U, thisArg?: any)  {
+  let arr: Array<T> = []
+  if ("length" in iterable)
+    arr = [...Array(iterable.length)]
+  else for (let i of iterable)
+    arr.push(i)
+  if (!mapfn) return arr
+  return arr.map.apply(thisArg ?? arr, [mapfn])
+}
