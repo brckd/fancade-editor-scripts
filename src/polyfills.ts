@@ -33,11 +33,11 @@ var console = {
   },
   clear: clearLog,
   count(label: string = "default") {
-    this.counts[label] ??= 0;
+    this.counts[label] ??= 1;
     this.print("[count]", [label + ":", this.counts[label]++]);
   },
   countReset(label: string = "default") {
-    this.counts[label] &&= 0;
+    this.counts[label] &&= 1;
   },
   time(label: string = "default") {
     this.times[label] = performance.now();
