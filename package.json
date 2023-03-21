@@ -17,6 +17,7 @@
     "minify": "node scripts/minify -- dist/"
   },
   "devDependencies": {
+    "@types/fancade-editor": "^1.12.0",
     "@types/node": "^18.15.5",
     "terser": "^5.16.6",
     "typescript": "^5.0.2"
