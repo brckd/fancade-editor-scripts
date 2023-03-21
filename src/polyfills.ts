@@ -1,5 +1,3 @@
-/// <reference types="fancade-editor" />
-
 clearLog();
 var console = {
   counts: Object.create(null) as Record<string, number>,

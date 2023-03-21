@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "commonjs",
     "lib": ["ES5"],
-    "types": [],
+    "types": ["fancade-editor"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
