@@ -4,7 +4,7 @@ import { program } from "@commander-js/extra-typings";
 import { resolve, relative } from "path";
 
 program
-  .argument("<input>")
+  .argument("input")
   .option("-c, --compress")
   .option("-m, --mangle")
   .option("-o, --output <dir>")

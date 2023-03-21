@@ -14,7 +14,7 @@
     "watch": "npx tsc -w --project src",
     "build:scripts": "npx tsc --project scripts",
     "watch:scripts": "npx tsc -w --project scripts",
-    "minify": "node scripts/minify -- dist/"
+    "minify": "node scripts/minify dist -cm"
   },
   "devDependencies": {
     "@types/fancade-editor": "^1.12.0",
