@@ -14,8 +14,10 @@ jobs:
         with:
           node-version: 18.x
       - run: npm ci
-      - run: npm run build
-      - run: npx terser -c -m -o dist/polyfills.min.js -- dist/polyfills.js
+      - run: |
+          npm run build
+          npm run build:scripts
+      - run: npm run minify -- -c -m
       - uses: actions/upload-artifact@v3
         with:
           path: dist/

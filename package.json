@@ -10,11 +10,18 @@
   "license": "MIT",
   "author": "Bricked",
   "scripts": {
-    "build": "npx tsc",
-    "watch": "npx tsc -w"
+    "build": "npx tsc --project src",
+    "watch": "npx tsc -w --project src",
+    "build:scripts": "npx tsc --project scripts",
+    "watch:scripts": "npx tsc -w --project scripts",
+    "minify": "node scripts/minify -- dist/"
   },
   "devDependencies": {
+    "@types/node": "^18.15.5",
     "terser": "^5.16.6",
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^10.0.3"
   }
 }
